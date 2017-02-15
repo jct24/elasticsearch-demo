@@ -1,0 +1,6 @@
+[report]
+precision = 1
+omit =
+    sys_packages/*
+    tests/*
+    *__init__.py

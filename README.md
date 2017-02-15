@@ -1,3 +1,8 @@
+### Run all tests with coverage:
+```
+env AWS_ACCESS_KEY_ES="AQECAHg+V4P6zdFfnDAbKl4DwuKbxzktrbjPUJ71feb7JuOUxgAAAHIwcAYJKoZIhvcNAQcGoGMwYQIBADBcBgkqhkiG9w0BBwEwHgYJYIZIAWUDBAEuMBEEDCWdCrsyqNnOPxoN8gIBEIAvkeVQAHlHa6frSoQ0NzNntnhNru1f6iSiBFv1Ut90bi3L4Q7WB3EFPHPJYIRZN6w=" AWS_SECRET_KEY_ES="AQECAHg+V4P6zdFfnDAbKl4DwuKbxzktrbjPUJ71feb7JuOUxgAAAIcwgYQGCSqGSIb3DQEHBqB3MHUCAQAwcAYJKoZIhvcNAQcBMB4GCWCGSAFlAwQBLjARBAwOllg0IU8UfQmfy3ICARCAQ0oSs9nHW8y9OjGR2cvVZuokqJSJPEyBSwtD/OjQ1jQd1rg6DkALm9bhKXlCWgq+itmI7wLfdSahM/KLb3XTkhCAQ4s=" py.test --cov-config=coveragerc --cov=handler --cov-report=term-missing tests/all_tests.py
+```
+
 ### To install new dependencies into the project:
 ```
 pip install -t sys_packages/ -r requirements.txt

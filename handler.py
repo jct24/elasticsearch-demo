@@ -178,6 +178,9 @@ def upload(event, context):
     """Upload a JSON formatted file to be loaded into the ElasticSearch cluster.  This function is never called
     directly.  Instead it's triggered off an upload into the data S3 bucket.
 
+    Example:
+        aws s3 cp data.json s3://elasticsearchdemo-data/data.json
+
     Args:
         event: AWS Lambda uses this parameter to pass in event data to the handler.
         context: AWS Lambda uses this parameter to provide runtime information to your handler.
