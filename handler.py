@@ -131,10 +131,10 @@ def create_aws_headers(data, uri, method):
 
 
 def initialize(event, context):
-    """Initialize the ElasticSearch cluster.  This function is used to initialize the ElasticSearch cluster.  Currently
-    the only thing that's being set is "numeric_detection", which is set to enable ES to convert a quoted number
-    (ie: "10") into a number instead of storing it as a string.  This enables aggregations over fields that are
-    incorrectly formatted as strings but are really numbers.
+    """This function is used to initialize the ElasticSearch cluster.  Currently the only thing that's being set is
+    "numeric_detection", which is set to enable ES to convert a quoted number (ie: "10") into a number instead of
+    storing it as a string.  This enables aggregations over fields that are incorrectly formatted as strings but are
+    really numbers.
 
     Example:
         curl "[ServiceEndpoint]/initialize"
